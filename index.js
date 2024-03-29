@@ -43,3 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
 window.addEventListener("beforeunload", function() {
     saveCount();
 });
+
+
+function clearCounts() {
+    for(let i = 0; i < counts.length; i++) { 
+        counts[i] = 0; 
+        let countElement = document.querySelector(".emoji__count-" + (i + 1));
+        countElement.innerHTML = emojis[i] + " count: <b>" + counts[i] + " </b>"; 
+    }
+}

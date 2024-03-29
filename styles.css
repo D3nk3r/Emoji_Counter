@@ -47,3 +47,22 @@ main {
   left: 200px;
     font-size: 2em;
 }
+
+.clearBtn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #b22424;
+    padding: 1em 2em 1em 2em;
+    font-size: 2em;
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+    border-radius: 3%;
+    transition: .2s transform ease-in-out;
+    user-select: none;
+}
+
+.clearBtn:hover {
+    background-color: #7b1919;
+    transform: translateY(5px);
+}
