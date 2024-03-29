@@ -33,13 +33,13 @@ function updateCounts() {
     }
 }
 
-// Add event listener for DOMContentLoaded event
+
 document.addEventListener("DOMContentLoaded", function() {
-    loadCount(); // Load counts from localStorage
-    changeEmoji(); // Change emoji on page load
+    loadCount(); 
+    changeEmoji(); 
 });
 
-// Call saveCount() before the page unloads to save the counts
+
 window.addEventListener("beforeunload", function() {
     saveCount();
 });
