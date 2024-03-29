@@ -45,7 +45,8 @@ main {
 .emojis__count {
   position: absolute;
   left: 200px;
-    font-size: 2em;
+ font-size: 2em;
+ user-select: none;
 }
 
 .clearBtn {
