@@ -1,0 +1,48 @@
+html {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ai_choice {
+
+}
+
+main {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15em;
+}
+
+.emoji {
+    font-size: 4em;
+    user-select: none;
+}
+
+.ai_choice {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 8px #000;
+    background-color: rgb(138, 161, 181);
+    border-radius: 50%;
+    transition: transform .5s ease-in-out;
+}
+
+.ai_choice:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.emojis__count {
+  position: absolute;
+  left: 200px;
+}
